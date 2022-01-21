@@ -1,0 +1,24 @@
+<meta charset = "UTF-8">
+
+<input type = "text"/>
+
+<button type = "button"> Enviar </button>
+
+<script>
+
+	var input = document.querySelector ("input");
+	input.focus (); 
+
+	document.addEventListener ('keypress', function (e) {
+
+    if (e.which == 13) {
+    pesquisa (); } 
+    }, false);
+
+	var botao = document.querySelector ("button");
+
+	var pesquisa = ()=> (input.value).length < 1 ? alert ("O campo está vazio!") : alert ("AGORA SIM!!!"); /* O símbolo "()=>" chamado de "arrow" é também utilizado para atribuir uma função (function). *//* Se forem usados juntamente nesse formato, IF = "?" e ELSE = ":" */
+
+	botao.addEventListener ("click", ()=> { pesquisa () } );
+
+</script>
